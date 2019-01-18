@@ -2,13 +2,13 @@ import java.util.Date;
 
 public class main {
     public static void main(String args[]){
-        customer me = new customer("Timothy", 500, 1500);
-        System.out.println(me);
+        customer I = new customer("Timothy", 500, 1500);
+        System.out.println(I);
 
-        me.deposit(100, new Date(), customer.SAVING);
-        me.withdraw(500, new Date(), customer.SAVING);
-        me.displayDeposits();
-        me.displayWithdraws();
-        System.out.println(me);
+        I.deposit(100, new Date(), customer.SAVING);
+        I.withdraw(500, new Date(), customer.SAVING);
+        I.displayDeposits();
+        I.displayWithdraws();
+        System.out.println(I);
     }
 }
