@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane prefHeight="406.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Add Friends">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="textGetusername" layoutX="151.0" layoutY="117.0" promptText="Username" />
+                        <TextField fx:id="textGetfirstname" layoutX="151.0" layoutY="167.0" promptText="First Name" />
+                        <TextField fx:id="textGetlastname" layoutX="151.0" layoutY="221.0" promptText="Last name" />
+                        <Button layoutX="358.0" layoutY="167.0" mnemonicParsing="false" onAction="#addFriend" text="Add Friend" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Friend List">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="Friendlist" layoutX="14.0" layoutY="14.0" onMouseClicked="#Displayfriend" prefHeight="353.0" prefWidth="235.0" />
+                        <Button layoutX="328.0" layoutY="233.0" mnemonicParsing="false" onAction="#deleteFriend" text="Delete Friend" />
+                        <Label layoutX="294.0" layoutY="14.0" text="Friends Information">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="314.0" layoutY="68.0" text="First Name:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="314.0" layoutY="93.0" text="Last Name:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblFirst" layoutX="387.0" layoutY="70.0" />
+                        <Label fx:id="lblLast" layoutX="387.0" layoutY="95.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
