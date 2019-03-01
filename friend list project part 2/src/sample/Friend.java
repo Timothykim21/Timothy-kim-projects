@@ -38,6 +38,4 @@ public class Friend {
         bw.close();
 
     }
-
-
 }
