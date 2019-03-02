@@ -34,7 +34,7 @@ public class Friend {
         bw.write(username +", \r");
         bw.write(firstName+", \r");
         bw.write(lastName+"\r");
-        bw.write("; \r");
+        bw.write(";\r");
         bw.close();
 
     }

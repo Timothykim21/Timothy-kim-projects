@@ -43,5 +43,6 @@ public class CreateFriend {
             }
         }
         friends.add(new Friend(username, firstName, lastName));
+
     }
 }
