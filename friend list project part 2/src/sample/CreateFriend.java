@@ -43,6 +43,5 @@ public class CreateFriend {
             }
         }
         friends.add(new Friend(username, firstName, lastName));
-        public String toString
     }
 }
