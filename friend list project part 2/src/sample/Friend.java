@@ -31,10 +31,10 @@ public class Friend {
     public void writeToFile() throws IOException{
         FileWriter fw = new FileWriter("friend.txt", true);
         BufferedWriter bw = new BufferedWriter(fw);
-        bw.write(username +",\r");
-        bw.write(firstName+",\r");
-        bw.write(lastName+",\r");
-        bw.write(";\r");
+        bw.write(username +", \r");
+        bw.write(firstName+", \r");
+        bw.write(lastName+"\r");
+        bw.write("; \r");
         bw.close();
 
     }

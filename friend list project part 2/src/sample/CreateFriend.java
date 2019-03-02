@@ -6,9 +6,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class CreateFriend {
-    private static username;
-    private static firstName;
-    private static lastName;
+    private static String username;
+    private static String firstName;
+    private static String lastName;
     private static FileReader fr;
     private static BufferedReader br;
     private static ArrayList<Friend> friends = new ArrayList<>();
@@ -42,5 +42,7 @@ public class CreateFriend {
                 lastName = string.substring(pos+1);
             }
         }
+        friends.add(new Friend(username, firstName, lastName));
+        public String toString
     }
 }
