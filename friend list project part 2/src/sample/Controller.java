@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 
 import java.awt.event.MouseEvent;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Controller {
     public TextField textGetusername;
@@ -51,6 +52,11 @@ public class Controller {
         Friendlist.getItems().clear();
     }
 
-    public void loadFriend(ActionEvent actionEvent) {
+    public void loadFriend(ActionEvent actionEvent) throws IOException {
+        Friendlist.getItems().clear();
+        ArrayList<Friend> friends = CreateFriend.creatAllFriend("friend.txt");
+        for(Friend f : friends){
+            Friendlist.getItems().add(f);
+        }
     }
 }
